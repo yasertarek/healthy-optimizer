@@ -1,10 +1,15 @@
 <template>
     <v-container>
 
-      <v-row style="height: 90vh">
+      <v-row style="height: 694px">
         <v-col cols="6" class="align-self-center">
           <h1 class="text-h1 text-primary font-weight-bold">For a better life,<br />Stay Healthy</h1>
-          <p class="text-body-1">We’ve made it easier for you to search for food nutrition</p>
+          <p class="text-body-1 mt-5">We’ve made it easier for you to search for food nutrition</p>
+          <v-text-field color="primary" base-color="primary" variant="outlined" label="label" class="rounded-pill mt-5">
+            <template #append-inner>
+              <v-icon>fas fa-search</v-icon>
+            </template>
+          </v-text-field>
         </v-col>
         <v-col cols="6">
           <svg
@@ -1961,11 +1966,57 @@
           </svg>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col cols="12">
+        <h2 class="text-h2 text-primary font-weight-bold">Exercises</h2> 
+        </v-col>
+        <v-col cols="12" md="4" v-for="i in 3" :key="`card-${i}`">
+           <v-card :class="`px-7 pt-7 pb-25 exercise-card${i === 2 ? ' exercise-card--active' : '' }`" :elevation="i === 2 ? '' : 0 ">
+            <v-img src="potatos.jpg">
+
+            </v-img>
+            <v-card-title class="text-h3 my-4">triceps dips on chair</v-card-title>
+            <v-card-text class="text-h4">
+              <b>Targeted Muscles</b>: core, chest, triceps, and shoulders
+            </v-card-text>
+            <v-card-actions>
+              <v-btn text>Learn more
+                <v-icon>fas fa-arrow-right</v-icon>
+              </v-btn>
+            </v-card-actions>
+           </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row class="my-9">
+        <v-col cols="12">
+        <h2 class="text-h2 text-primary font-weight-bold meals-head">Meals</h2> 
+        </v-col>
+        <v-col cols="12" md="4" v-for="i in 3" :key="`card-${i}`">
+           <v-card class="px-7 pt-7 pb-25 meals-content">
+            <v-card-actions>
+              <v-btn class="meals-btn">Healthy Shredded <br> Chicken Tacos
+              </v-btn>
+            </v-card-actions>
+           </v-card>
+        </v-col>
+      </v-row>
+
+      
+      <v-row class="my-9">
+        <v-col cols="12" md="4" v-for="i in 4" :key="`card-${i}`">
+           <v-card class="px-7 pt-7 pb-25 meals-content">
+            <v-card-actions>
+              <v-btn class="meals-btn">Healthy Shredded <br> Chicken Tacos
+              </v-btn>
+            </v-card-actions>
+           </v-card>
+        </v-col>
+      </v-row>
     </v-container>
 </template>
-
 <script>
-export default {
+export default  {
   data() {
     return {
       headTitle: "Healthy optimizer",

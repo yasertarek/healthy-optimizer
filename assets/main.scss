@@ -25,6 +25,9 @@ $secondary: #FD651F;
 .z-12{
     z-index: 12;
 }
+.pb-25{
+    padding-bottom: 100px !important;
+}
 /* End Framework */
 
 /* Start Main style */
@@ -69,5 +72,34 @@ $secondary: #FD651F;
             height: 418.78px;
         }
     }
+}
+.rounded-pill.v-input .v-input__slot {
+    border-radius: 100px;
+}
+// .exercise-card--active{
+//     box-shadow: 0px 50px 80px rgba(51, 195, 83, 0.2);
+
+// }
+.exercise-card{
+    border: 1px solid rgba(255, 240, 218, 1) !important;
+    border-radius: 50px !important;
+    &--active{
+        box-shadow: 0px 50px 80px rgba(51, 195, 83, 0.2) !important;
+    }
+}
+.meals-content{
+    height: 521px;
+    background: linear-gradient(180deg, rgba(8, 43, 16, 0) 38.02%, #082B10 89.06%), url(../public/potatos.jpg) !important;
+    // background-image: url(../public/potatos.jpg) !important;
+    mix-blend-mode: multiply ;
+    border-radius: 50px !important;
+}
+.meals-head{
+    margin-left:520px;
+}
+.meals-btn{
+    font-size: 24px !important;
+    margin-top: 390px;
+    color: #FFFFFF !important;
 }
 /* End Main style */
