@@ -1976,7 +1976,7 @@
 
             </v-img>
             <v-card-title class="text-h3 my-4">triceps dips on chair</v-card-title>
-            <v-card-text class="text-h4">
+            <v-card-text class="text-h4"> 
               <b>Targeted Muscles</b>: core, chest, triceps, and shoulders
             </v-card-text>
             <v-card-actions>
