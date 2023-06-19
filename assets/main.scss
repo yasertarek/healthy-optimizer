@@ -1,0 +1,73 @@
+$primary: #31CB00;
+$secondary: #FD651F;
+/* OVERRIDES */
+.v-btn{
+    &.nav-btn{
+    }
+    &--active{        
+        &.nav-btn {
+            color: $primary;
+            .v-btn__overlay{
+                display: none;
+                }
+        }
+    }
+}
+// .text{
+//     &-h1{
+//         font-size: 72px !important;
+//     }
+// }
+// .text-md-h1{
+//     font-size: 72px !important;
+// }
+/* Start Framework */
+.z-12{
+    z-index: 12;
+}
+/* End Framework */
+
+/* Start Main style */
+.drawing{
+    position: relative;
+    &__item{
+        position: absolute;
+        &--dots{
+            &-1{
+                top: 350px;
+                right: 84px
+            }
+            &-2{
+                top: 238px;
+                right: 435px;
+            }
+        }
+        &--lines{
+            top: -108px;
+            right: -170.58px
+        }
+        &--photo{
+            top: 257px;
+            right: 113px;
+            width: 481px;
+            height: 481px;
+            background-color: #BAEFC6;
+            transform: rotate(-105deg);
+            border-radius: 80px;
+            overflow: hidden;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        }
+        &--heart{
+            right: 95px;
+            top: 151px;
+            filter: blur(1px);
+        }
+        &--overlay{
+            right: -101px;
+            top: -99px;
+            width: 576.1px;
+            height: 418.78px;
+        }
+    }
+}
+/* End Main style */
