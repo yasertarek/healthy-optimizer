@@ -2002,17 +2002,6 @@
         </v-col>
       </v-row>
 
-      
-      <v-row class="my-9">
-        <v-col cols="12" md="4" v-for="i in 4" :key="`card-${i}`">
-           <v-card class="px-7 pt-7 pb-25 meals-content">
-            <v-card-actions>
-              <v-btn class="meals-btn">Healthy Shredded <br> Chicken Tacos
-              </v-btn>
-            </v-card-actions>
-           </v-card>
-        </v-col>
-      </v-row>
     </v-container>
 </template>
 <script>
