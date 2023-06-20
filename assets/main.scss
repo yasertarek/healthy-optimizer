@@ -1,5 +1,9 @@
 $primary: #31CB00;
 $secondary: #FD651F;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    font-family: "poppins";
+}
 /* OVERRIDES */
 .v-btn{
     &.nav-btn{
@@ -90,16 +94,31 @@ $secondary: #FD651F;
 .meals-content{
     height: 521px;
     background: linear-gradient(180deg, rgba(8, 43, 16, 0) 38.02%, #082B10 89.06%), url(../public/potatos.jpg) !important;
-    // background-image: url(../public/potatos.jpg) !important;
-    mix-blend-mode: multiply ;
     border-radius: 50px !important;
 }
 .meals-head{
-    margin-left:520px;
+    text-align: center;
+    margin-top: 120px;
 }
 .meals-btn{
     font-size: 24px !important;
     margin-top: 390px;
     color: #FFFFFF !important;
+    text-decoration: underline !important;
+}
+.latest{
+    margin-top: 245px !important;
+    background: linear-gradient(180deg, #DEFCE4 0%, rgba(222, 252, 228, 0.5) 100%);
 }
 /* End Main style */
+
+
+/* login page style start */
+.login-page{
+        background: linear-gradient(180deg, rgba(8, 43, 16, 0) 38.02%, #082B10 89.06%), url(../public/potatos.jpg) !important;
+        // background: rgba(2, 9, 20, 0.54);
+        border-radius: 0px 40px 40px 0px;
+}
+/* login page style end */
+
+

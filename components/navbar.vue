@@ -181,7 +181,7 @@
         <nav-btn>Resources</nav-btn>
         <nav-btn>Resources</nav-btn>
         <v-spacer></v-spacer>
-
+        
         <v-btn size="x-large" width="145"  color="primary" rounded="pill" variant="flat" class="me-1 text-subtitle-1">Log in</v-btn>
         <v-btn size="x-large" width="145"  color="primary" rounded="pill" variant="outlined text-subtitle-1">Register</v-btn>
 
