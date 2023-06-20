@@ -1,8 +1,7 @@
 <template>
-  <v-app-bar :height="90" elevation="0" style="z-index: 10;background-color: rgba(255, 255, 255, 0.7)">
-    <v-container>
-      <div class="d-flex align-center">
-        <nav-btn to="/" :size="80" color="white">
+  <v-row style="height: 100vh;" class="ma-0">
+   <v-col cols="7" class="login-page">
+    <nav-btn to="/" :size="80" color="white" style=" margin:30px 0 0 60px;">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 413.68 341.87"
@@ -141,62 +140,79 @@
             />
           </svg>
         </nav-btn>
-        <v-spacer></v-spacer>
-        <nav-btn to="/">Home</nav-btn>
-        <v-menu open-on-hover>
-          <template v-slot:activator="{ props }">
-            <nav-btn v-bind="props"> Exercise </nav-btn>
-          </template>
+   </v-col>
 
-          <v-list>
-            <v-list-item>
-              <v-list-item-title>Nutrition search</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Recipes</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Diets</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-        <v-menu open-on-hover>
-          <template v-slot:activator="{ props }">
-            <nav-btn v-bind="props"> Food </nav-btn>
-          </template>
+   
+   <v-col cols="5" >
+    <v-card class="mx-auto px-6 py-8" max-width="544" style="margin-top:100px; box-shadow:none;">
+      <v-text-title style="font-size:30px;color: #082B10;">
+        <b>Sign In</b>
+      </v-text-title>
+      <v-card-text class="text-h6 text-grey-darken-3" style="margin-left:-15px;">
+        If you don’t have an account register <br>You can  <v-btn :to="{name: 'register'} " style="box-shadow:none; width:140px;"><b class="text-primary"> Register here !</b></v-btn>
+        </v-card-text>
+      <v-form
+        v-model="form"
+        @submit.prevent="onSubmit"
+      >
+      <v-text-field
+        v-model="email"
+        color="primary"
+        label="Email"
+        variant="underlined"
+      ></v-text-field>
+      <v-text-field
+        v-model="password"
+        color="primary"
+        label="Password"
+        placeholder="Enter your password"
+        variant="underlined"
+      > <template #append-inner>
+            <v-icon style="font-size:15px;">fas fa-eye-slash</v-icon>
+            <!-- <v-icon>fas fa-eye</v-icon> -->
+          </template></v-text-field>
+          <v-checkbox
+        v-model="terms"
+        color="secondary"
+        label="Rememebr me"
+        style=" width:200px; float:left; font-size:10px;"
+      ></v-checkbox>
+       
+      <v-btn  style="margin:5px 0 0 130px; font-size:10px;box-shadow:none;">Forgot Password ?
+            </v-btn>
+        <br>
 
-          <v-list>
-            <v-list-item>
-              <v-list-item-title>Nutrition search</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Recipes</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Diets</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-
-        <nav-btn>Resources</nav-btn>
-        <nav-btn>Resources</nav-btn>
-        <v-spacer></v-spacer>
+        <v-btn
         
-        <v-btn size="x-large" width="145"  color="primary" rounded="pill" variant="flat" class="me-1 text-subtitle-1" :to="{name: 'login'}">Log in</v-btn>
-        <v-btn size="x-large" width="145"  color="primary" rounded="pill" variant="outlined text-subtitle-1" :to="{name: 'register'}">Register</v-btn>
-
-        <nav-btn icon="fas fa-bars" class="hidden-md-and-up"></nav-btn>
-      </div>
-    </v-container>
-  </v-app-bar>
+          block
+          color="success"
+          size="large"
+          type="submit"
+          variant="elevated"
+        >
+          Login
+        </v-btn>
+      </v-form>
+      <v-card-text class="text-h6 text-grey-darken-2" style="text-align:center; margin-top:50px;">
+        or continue with
+        </v-card-text>
+        <v-card-text class="text-h6 text-grey-darken-2" style="text-align:center; margin-top:10px;">
+          <v-icon style="font-size:30px; color: #0163E0;">fab fa-facebook</v-icon>
+        <v-icon style="font-size:35px; margin-left:15px; color: #050b12;">fab fa-apple</v-icon>
+        <v-icon style="font-size:30px; margin-left:15px; color: #e00101;">fab fa-google</v-icon>
+        </v-card-text>
+       
+    </v-card>
+   </v-col>
+  </v-row>
 </template>
-
-<style scoped lang="scss"></style>
-
 <script>
-export default {
-  data() {
-    return {};
-  },
-};
+export default{
+    data(){
+        return{
+
+        }
+    },
+    layout: 'landboard',
+}
 </script>
