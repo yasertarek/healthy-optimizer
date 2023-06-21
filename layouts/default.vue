@@ -5,7 +5,7 @@
       <NuxtLoadingIndicator />
       <NuxtPage />
     </v-main>
-    <footer />
+    <Footer />
 
     <!-- <footer-main /> -->
   </v-app>

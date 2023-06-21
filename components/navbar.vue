@@ -145,7 +145,7 @@
         <nav-btn to="/">Home</nav-btn>
         <v-menu open-on-hover>
           <template v-slot:activator="{ props }">
-            <nav-btn v-bind="props" :to="{name:'exercises'}"> Exercise </nav-btn>
+            <nav-btn v-bind="props" :to="{name:'exercises'}"> Exercises </nav-btn>
           </template>
 
           <v-list>
@@ -156,19 +156,19 @@
               <v-list-item-title><nav-btn :to="{name:'backexercis'}">Back Exercises</nav-btn></v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-list-item-title>Chest Exercises</v-list-item-title>
+              <v-list-item-title><nav-btn :to="{name:'chestexercis'}">Chest Exercises</nav-btn></v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-list-item-title>Bicep Exercises</v-list-item-title>
+              <v-list-item-title><nav-btn :to="{name:'bicepexercis'}">Bicep Exercises</nav-btn></v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-list-item-title>Tricep Exercises</v-list-item-title>
+              <v-list-item-title><nav-btn :to="{name:'tricepexercis'}">Tricep Exercises</nav-btn></v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-list-item-title>Shoulder Exercises</v-list-item-title>
+              <v-list-item-title><nav-btn :to="{name:'shoulderexercis'}">Shoulder Exercises</nav-btn></v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-list-item-title>Core Exercises</v-list-item-title>
+              <v-list-item-title><nav-btn :to="{name:'coreexercis'}">Core Exercises</nav-btn></v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -179,13 +179,13 @@
 
           <v-list>
             <v-list-item>
-              <v-list-item-title>Nutrition search</v-list-item-title>
+              <v-list-item-title><nav-btn>Nutrition search</nav-btn></v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-list-item-title>Recipes</v-list-item-title>
+              <v-list-item-title><nav-btn>Recipes</nav-btn></v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-list-item-title>Diets</v-list-item-title>
+              <v-list-item-title><nav-btn>Diets</nav-btn></v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>

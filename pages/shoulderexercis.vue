@@ -1,17 +1,14 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col cols="12">
-        <v-card-title
-          class="text-h2 text-primary font-weight-bold"
-          style="margin-top: 60px"
-        >
-          Leg Exercises
-        </v-card-title>
-      </v-col>
-      <v-col cols="12" class="my-6" v-for="i in 10" :key="`card-${i}`">
+    <v-container>
+       <v-row>
+           <v-col cols="12">
+       <v-card-title class="text-h2 text-primary font-weight-bold" style="margin-top:60px;">
+           Shoulder Exercises
+       </v-card-title>
+     </v-col>
+     <v-col cols="12" class="my-6" v-for="i in 10" :key="`card-${i}`">
         <v-row>
-          <v-col cols="4" class="text-h4" >
+          <v-col cols="4" class="text-h4">
             <v-img src="potatos.jpg" cover height="100%"> </v-img>
           </v-col>
           <v-spacer></v-spacer>
@@ -31,14 +28,16 @@
           </v-col>
         </v-row>
       </v-col>
-    </v-row>
-  </v-container>
+       </v-row>
+   </v-container> 
 </template>
 
 <script>
 export default {
-  data() {
-    return {};
-  },
-};
+   data(){
+       return {
+
+       };
+   },
+}
 </script>

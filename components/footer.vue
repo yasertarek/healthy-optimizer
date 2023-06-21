@@ -1,7 +1,8 @@
 <template>
-     <!-- Footer start -->
-     <v-row>
-      <v-col cols="12" md="3" style="margin-top:150px;" v-for="i in 4" :key="`card-${i}`">
+   <!-- Footer start -->
+<v-container>
+    <v-row style="margin-top:150px;">
+      <v-col cols="3"   >
         <nav-btn to="/" :size="80" color="white" class="mx-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -141,13 +142,70 @@
             />
           </svg>
         </nav-btn>
-        <v-card-text class="text-h6 text-grey-darken-3 font-weight-bold">
-          <i class="text-primary">Life Optimizer</i> is the pioneer of 
+        <v-card-text class="text-h6 text-grey-darken-3">
+          <b><i class="text-primary">Life Optimizer</i></b> is the pioneer of 
 healthy fruit salad with 
 high nutrition.
         </v-card-text>
       </v-col>
+
+
+      <v-col cols="3">
+      <v-card-title class="text-primary font-weight-bold" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+        Feature
+      </v-card-title>
+      <nav-btn style=" width:80px; height:30px;" :to="{name:'index'}">Home</nav-btn><br>
+      <nav-btn style=" width:105px; height:30px;" :to="{name:'exercises'}">Exercises</nav-btn><br>
+      <nav-btn style=" width:162px; height:30px;">Nutrition search</nav-btn><br>
+      <nav-btn style=" width:95px; height:30px;">Recipes</nav-btn><br>
+      <nav-btn style=" width:70px; height:30px;">Diets</nav-btn><br>
+      <nav-btn style=" width:120px; height:30px;">Contact Us</nav-btn>
+
+      </v-col>
+      
+      <v-col cols="3">
+        <v-card-title class="text-primary font-weight-bold" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+        Get in Touch
+      </v-card-title>
+      <v-card-text class="my-1">
+        <v-icon class="text-primary" style="font-size:15px;">fas fa-map-marker-alt</v-icon> 
+        
+        8819 Ohio St. South Gate,
+        CA 
+      </v-card-text>
+      <v-card-text class="my-2">
+        <v-icon class="text-primary" style="font-size:15px;">fa-regular fa-envelope</v-icon> 
+        
+        Ourstudio@hello.com
+      </v-card-text>
+      <v-card-text class="my-1">
+        <v-icon class="text-primary" style="font-size:15px;">fas fa-phone</v-icon> 
+        
+        +1 386-688-3295
+      </v-card-text>
+
+
+      </v-col>  
+
+      <v-col cols="3">
+        <nav-btn :to="{name:'index'}"><v-icon class="text-primary" style="font-size:35px;">fab fa-facebook</v-icon> 
+</nav-btn>
+<nav-btn :to="{name:'index'}"><v-icon class="text-primary" style="font-size:35px;">fab fa-linkedin</v-icon> 
+</nav-btn>
+<nav-btn :to="{name:'index'}"><v-icon class="text-primary" style="font-size:35px;">fab fa-instagram</v-icon> 
+</nav-btn>
+<v-card-text class="my-3 mx-1">
+  Follow our social media.
+      </v-card-text>
+      </v-col>
     </v-row>
+    <v-row>
+      <v-card-text class="text-h6 text-grey-darken-3 mx-3">
+        &copy; Copyright
+                            <span style="color: #31cb00; font-weight: 500">Life Optimizer</span>
+        </v-card-text>
+    </v-row>
+</v-container>
     <!-- Footer End -->
 </template>
 
