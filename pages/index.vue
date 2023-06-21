@@ -2102,7 +2102,7 @@
     <!-- Our Subscribe end -->
     <!-- Footer start -->
     <v-row>
-      <v-col cols="12" md="3" style="margin-top:150px;" v-for="i in 4" :key="`card-${i}`">
+      <v-col cols="3"  style="margin-top:150px;" >
         <nav-btn to="/" :size="80" color="white" class="mx-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -2248,6 +2248,24 @@ healthy fruit salad with
 high nutrition.
         </v-card-text>
       </v-col>
+
+
+      <v-col cols="3"  style="margin-top:150px;" >
+      <v-card-title class="text-primary font-weight-bold" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">
+        Feature
+      </v-card-title>
+      <nav-btn style=" width:80px;">Home</nav-btn><br>
+      <nav-btn style=" width:80px;">Home</nav-btn><br>
+      <nav-btn style=" width:80px;">Home</nav-btn><br>
+      <nav-btn style=" width:80px;">Home</nav-btn>
+
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-card-text class="text-h6 text-grey-darken-3 mx-3">
+        &copy; Copyright
+                            <span style="color: #31cb00; font-weight: 500">Life Optimizer</span>
+        </v-card-text>
     </v-row>
     <!-- Footer End -->
   </v-container>

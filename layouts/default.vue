@@ -1,10 +1,11 @@
 <template>
   <v-app :class="$route.name">
-    <!-- <navbar :v-if="isNavbarVisible" /> -->
+    <navbar :v-if="isNavbarVisible" />
     <v-main>
       <NuxtLoadingIndicator />
       <NuxtPage />
     </v-main>
+    <footer />
 
     <!-- <footer-main /> -->
   </v-app>

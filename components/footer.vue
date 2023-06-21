@@ -1,8 +1,8 @@
 <template>
-  <v-app-bar :height="90" elevation="0" style="z-index: 10;background-color: rgba(255, 255, 255, 0.7)">
-    <v-container>
-      <div class="d-flex align-center">
-        <nav-btn to="/" :size="80" color="white">
+     <!-- Footer start -->
+     <v-row>
+      <v-col cols="12" md="3" style="margin-top:150px;" v-for="i in 4" :key="`card-${i}`">
+        <nav-btn to="/" :size="80" color="white" class="mx-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 413.68 341.87"
@@ -141,74 +141,22 @@
             />
           </svg>
         </nav-btn>
-        <v-spacer></v-spacer>
-        <nav-btn to="/">Home</nav-btn>
-        <v-menu open-on-hover>
-          <template v-slot:activator="{ props }">
-            <nav-btn v-bind="props" :to="{name:'exercises'}"> Exercise </nav-btn>
-          </template>
-
-          <v-list>
-            <v-list-item>
-              <v-list-item-title><nav-btn :to="{name:'legexercis'}">Leg Exercises</nav-btn></v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title><nav-btn :to="{name:'backexercis'}">Back Exercises</nav-btn></v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Chest Exercises</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Bicep Exercises</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Tricep Exercises</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Shoulder Exercises</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Core Exercises</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-        <v-menu open-on-hover>
-          <template v-slot:activator="{ props }">
-            <nav-btn v-bind="props"> Food </nav-btn>
-          </template>
-
-          <v-list>
-            <v-list-item>
-              <v-list-item-title>Nutrition search</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Recipes</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>Diets</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-
-        <nav-btn :to="{name:'contact'}">Contact Us</nav-btn>
-        
-        <v-spacer></v-spacer>
-        
-        <v-btn size="x-large" width="145"  color="primary" rounded="pill" variant="flat" class="me-1 text-subtitle-1" :to="{name: 'login'}">Log in</v-btn>
-        <v-btn size="x-large" width="145"  color="primary" rounded="pill" variant="outlined text-subtitle-1" :to="{name: 'register'}">Register</v-btn>
-
-        <nav-btn icon="fas fa-bars" class="hidden-md-and-up"></nav-btn>
-      </div>
-    </v-container>
-  </v-app-bar>
+        <v-card-text class="text-h6 text-grey-darken-3 font-weight-bold">
+          <i class="text-primary">Life Optimizer</i> is the pioneer of 
+healthy fruit salad with 
+high nutrition.
+        </v-card-text>
+      </v-col>
+    </v-row>
+    <!-- Footer End -->
 </template>
-
-<style scoped lang="scss"></style>
 
 <script>
 export default {
-  data() {
-    return {};
-  },
-};
+    data(){
+     return{
+
+     };
+    },
+}
 </script>
